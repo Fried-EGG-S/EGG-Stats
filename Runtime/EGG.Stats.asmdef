@@ -1,0 +1,31 @@
+{
+    "name": "EGG.Stats",
+    "rootNamespace": "EGG.Stats",
+    "references": [
+        "GUID:d525ad6bd40672747bde77962f1c401e",
+        "GUID:940b85150d9a61c4b91dffdb3eb25649"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "HAS_SERIALIZED_DICTIONARY",
+        "HAS_SERIALIZED_GUID"
+    ],
+    "versionDefines": [
+        {
+            "name": "ayellowpaper.serialized-dictionary",
+            "expression": "1.0.0",
+            "define": "HAS_SERIALIZED_DICTIONARY"
+        },
+        {
+            "name": "com.egg.serialization",
+            "expression": "1.0.0",
+            "define": "HAS_SERIALIZED_GUID"
+        }
+    ],
+    "noEngineReferences": false
+}
