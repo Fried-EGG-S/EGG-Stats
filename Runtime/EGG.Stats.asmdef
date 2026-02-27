@@ -22,7 +22,7 @@
             "define": "HAS_SERIALIZED_DICTIONARY"
         },
         {
-            "name": "com.egg.serialization",
+            "name": "com.fried-eggs.serialization",
             "expression": "1.0.0",
             "define": "HAS_SERIALIZED_GUID"
         }
