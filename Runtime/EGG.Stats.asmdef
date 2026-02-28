@@ -12,15 +12,9 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [
-        "HAS_SERIALIZED_DICTIONARY",
         "HAS_SERIALIZED_GUID"
     ],
     "versionDefines": [
-        {
-            "name": "ayellowpaper.serialized-dictionary",
-            "expression": "1.0.0",
-            "define": "HAS_SERIALIZED_DICTIONARY"
-        },
         {
             "name": "com.fried-eggs.serialization",
             "expression": "1.0.0",
