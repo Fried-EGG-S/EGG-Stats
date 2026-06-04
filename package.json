@@ -1,6 +1,6 @@
 {
   "name": "com.fried-eggs.stats",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Fried EGGS Stat System",
   "description": "Stat System Package.",
   "unity": "6000.2",

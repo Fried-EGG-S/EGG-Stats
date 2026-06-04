@@ -29,39 +29,7 @@ namespace EGG.Stats
             {
                 if (!_isDirty) return CachedValue;
 
-                float value = BaseValue;
-
-                float flatIncrease = 0f;
-                float additivePercent = 1f;
-                float multiplicativeTotal = 1f;
-                float? overrideValue = null;
-
-                foreach (var mod in _modifiers.Values)
-                {
-                    switch (mod.Type)
-                    {
-                        case StatModType.Flat:
-                            flatIncrease += mod.Value;
-                            break;
-
-                        case StatModType.Additive:
-                            additivePercent += mod.Value;
-                            break;
-
-                        case StatModType.Multiplicative:
-                            multiplicativeTotal *= mod.Value;
-                            break;
-
-                        case StatModType.Override:
-                            overrideValue = mod.Value;
-                            break;
-                    }
-                }
-
-                value += flatIncrease;
-                value *= additivePercent;
-                value *= multiplicativeTotal;
-                CachedValue = Mathf.Max(overrideValue ?? value, 0);
+                CachedValue = StatMath.Fold(BaseValue, _modifiers.Values);
                 _isDirty = false;
 
                 return CachedValue;
